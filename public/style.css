@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.password_reset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password_reset .title {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+    margin: 3rem 0 0 0;
+}
+
+.password_reset .title span {
+    font-style: italic;
+    color: #fc8a1b;
+}
+
+.password_reset p:nth-child(3) {
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 90%;
+    margin: 3rem 0 0 0;
+    border: 2px solid #fc8a1b;
+    border-radius: 2rem;
+    box-shadow: rgba(65, 61, 107, 0.5) 0px 7px 29px 0px;
+    padding: 3rem;
+}
+
+.password_reset p:nth-child(3) a {
+    font-style: italic;
+    color: #413d6b;
+    cursor: pointer;
+}
+
+.password_reset p:nth-child(4) {
+    font-size: 3rem;
+    font-weight: 600;
+    width: 90%;
+    margin: 3rem 0 0 0;
+    text-align: center;
+}
+
+.password_reset .logo {
+    font-family: 'Lobster';
+    font-size: 6rem;
+    margin: 3rem 0 0 0;
+}
