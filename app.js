@@ -14,7 +14,7 @@ const userRouter = require('./routes/userRoutes');
 
 const ROOT_URL = 'https://exercisedb.p.rapidapi.com/exercises';
 
-mongoose.connect('mongodb://localhost:27017/practice-model').then(() => {
+mongoose.connect(process.env.MONGODB_URL.replace('<password>', process.env.MONGODB_PASSWORD)).then(() => {
     console.log('Connected To Database');
 });
 
