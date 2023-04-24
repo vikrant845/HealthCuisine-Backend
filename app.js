@@ -20,7 +20,9 @@ mongoose.connect(process.env.MONGODB_URL.replace('<password>', process.env.MONGO
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(cors());
+app.use(cors({
+    origin: 'https://health-cuisine.onrender.com'
+}));
 
 app.use('/api/v1/exercises', exerciseRouter);
 app.use('/api/v1/users', userRouter);
