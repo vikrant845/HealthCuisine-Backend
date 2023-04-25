@@ -16,7 +16,6 @@ const userSchema = new mongoose.Schema({
     },
     maidenName: {
         type: String,
-        required: true,
         trim: true
     },
     age: {
@@ -35,10 +34,7 @@ const userSchema = new mongoose.Schema({
         required: [true, 'Please Enter An Email'],
         validate: [validator.isEmail, 'Email should be valid']
     },
-    phone: {
-        type: String,
-        required: true
-    },
+    phone: String,
     username: {
         type: String,
         trim: true,
@@ -67,7 +63,7 @@ const userSchema = new mongoose.Schema({
     image: String,
     bloodGroup: {
         type: String,
-        required: true
+        default: ''
     },
     height: Number,
     weight: Number,
