@@ -21,7 +21,7 @@ Password: atuny0@123
 
 # How to run the project
 Once you clone the project, make sure you have node installed in your system. Open the clone in vs code or any editor of your choice. On your system's terminal/cmd navigate to your clone directory and run `npm install`. This installs all dependencies present in the package.json. Now simply create an config.env file in the main folder and add these in the file  
-`MONGODB_URL=Your mongodb url  
+```MONGODB_URL=Your mongodb url  
 MONGODB_PASSWORD=Your mongodb password  
   
 EMAIL_FROM=Your email configuration  
@@ -31,6 +31,6 @@ EMAIL_USERNAME=Your email configuration
 EMAIL_PASSWORD=Your email configuration  
   
 JWT_SECRET=YOUR_JWT_SECRET  
-JWT_EXPIRES_IN=YOU_JWT_EXPIRY  `
-  
+JWT_EXPIRES_IN=YOU_JWT_EXPIRY  
+  ```
 Now run `nodemon app.js` in terminal on your project directory in the terminal. Your app will start.
